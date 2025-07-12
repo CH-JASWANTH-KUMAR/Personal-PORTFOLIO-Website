@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaswanth Kumar | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+      --text: #ffffff;
+      --highlight: #ffd700;
+      --light-bg: #ffffff;
+      --light-text: #111;
+    }
+    body.light-mode {
+      background: #f9f9f9;
+      color: var(--light-text);
+    }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      transition: all 0.3s ease;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 5px solid var(--highlight);
+      margin-bottom: 1rem;
+      box-shadow: 0 0 20px var(--highlight);
+      background-color: #fff;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.2rem;
+    }
+    header h2 {
+      font-weight: 300;
+      font-size: 1.2rem;
+      color: #eee;
+    }
+    .typing {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #ffe97f;
+      height: 24px;
+    }
+    #themeToggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background-color: rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    }
+    h3 {
+      color: var(--highlight);
+      border-bottom: 2px solid var(--highlight);
+      padding-bottom: 0.5rem;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 0.5rem 0;
+    }
+    a {
+      color: #ffe97f;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    form label, form input, form textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    form input, form textarea {
+      padding: 0.5rem;
+      border-radius: 8px;
+      border: none;
+    }
+    form button {
+      background-color: var(--highlight);
+      color: #111;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background-color: rgba(0,0,0,0.4);
+    }
+    .tech-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+    .tech-icons img {
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <button id="themeToggle">Toggle Mode</button>
+  <header>
+    <img src="profile2.jpeg" alt="Jaswanth Kumar Profile Photo">
+    <h1>Chettupalli Jaswanth Kumar</h1>
+    <h2><span class="typing" id="typing"></span></h2>
+  <div style="margin-top: 1rem;">
+  <a href="https://www.linkedin.com/in/jaswanth-kumar-chettupalli-7b0809333/" target="_blank">LinkedIn</a> |
+  <a href="https://github.com/CH-JASWANTH-KUMAR" target="_blank">GitHub</a>
+</div>
+
+  <section class="about">
+    <h3>About Me</h3>
+    <p>
+      🌟 I’m Chettupalli Jaswanth Kumar, a 2nd-year CSE student at Gitam University passionate about technology and real-world problem solving.<br>
+      🚀 I work on projects involving IoT, automation, and 3D design using Fusion 360.<br>
+      💡 I'm an aspiring entrepreneur focused on building efficient and innovative solutions.<br>
+      👋 Let’s connect and build the future together!
+    </p>
+  </section>
+
+  <section class="skills">
+    <h3>Skills</h3>
+    <ul>
+      <li>C, Python, Java</li>
+      <li>HTML, CSS</li>
+      <li>Fusion 360, TinkerCAD</li>
+      <li>Sensors, IoT, Power Tools</li>
+      <li>DSA, Communication, Leadership</li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h3>Projects</h3>
+    <ul>
+      <li><strong>Smart Car Parking System</strong> – Automated lift & rotation-based parking using IR sensors and motors.</li>
+      <li><strong>Voice-Controlled Home Automation</strong> – Gesture & voice controlled lighting system using Python and Arduino.</li>
+      <li><strong>Waste to Renewable Energy Model</strong> – Sustainable energy model converting waste to useful energy.</li>
+      <li><strong>Missile Compartment Automation System</strong> – Concealed missile launcher prototype using Fusion 360 and sensors.</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h3>Contact</h3>
+    <form action="https://formsubmit.co/jaswanthkumarchettupalli@gmail.com" method="POST">
+      <label>Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Message:</label>
+      <textarea name="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <section class="technologies">
+    <h3>Technologies I Use</h3>
+    <div class="tech-icons">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino">
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Chettupalli Jaswanth Kumar | Built with 💻 and passion ✨
+  </footer>
+
+  <script>
+    // Typing effect
+    const words = ["CSE Student", "Tech Explorer", "Problem Solver"];
+    let i = 0, j = 0, current = '', isDeleting = false;
+    const typingElement = document.getElementById("typing");
+
+    function type() {
+      if (i < words.length) {
+        if (!isDeleting && j <= words[i].length) {
+          current = words[i].substring(0, j++);
+        } else if (isDeleting && j > 0) {
+          current = words[i].substring(0, j--);
+        }
+
+        typingElement.textContent = current;
+
+        if (!isDeleting && j === words[i].length) {
+          isDeleting = true;
+          setTimeout(type, 1000);
+          return;
+        }
+
+        if (isDeleting && j === 0) {
+          isDeleting = false;
+          i = (i + 1) % words.length;
+        }
+        setTimeout(type, isDeleting ? 50 : 100);
+      }
+    }
+    type();
+
+    // Theme toggle
+    const toggleBtn = document.getElementById('themeToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+    });
+  </script>
+</body>
+</html>
